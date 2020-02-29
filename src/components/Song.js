@@ -134,7 +134,7 @@ const NameWrapper = styled.div`
 	}
 `
 
-const Name = styled.h2`
+const Name = styled.h1`
 	color: var(--color-secondary);
 	font-size: 1.7rem;
 	line-height: 20px;

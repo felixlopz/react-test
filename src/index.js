@@ -10,7 +10,6 @@ import GlobalStyles from './utils/globals';
 
 // Reach router provider
 import {
-  createMemorySource,
   createHistory,
   LocationProvider
 } from "@reach/router";
