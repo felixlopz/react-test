@@ -12,8 +12,7 @@ import PlayList from '../components/PlayList';
 
 
 const Wrapper = styled.section`
-	
-	
+	margin-bottom: 100px;
 `
 
 const Heading = styled.div`
@@ -38,11 +37,7 @@ const PageTitle = styled.h1`
     font-size: 2.9rem;
     line-height: 35px;
   }
-
-
 `
-
-
 const Home = () => {
   return (
   	<Wrapper>
