@@ -1,16 +1,12 @@
 import React  from 'react';
 import styled from 'styled-components';
-import { Link } from '@reach/router';
-
-
+import { Link } from "react-router-dom";
 
 // Grid
 import  { Container }  from '../utils/grid';
 
-
 // Layout
 import Navigation from './Navigation';
-
 
 // Styled Components
 const Wrapper = styled.header`
@@ -46,7 +42,7 @@ const Header = ( ) => {
   	<Wrapper>
       <Container>
         <HeaderWrapper>
-          <Link to="/page">
+          <Link to="/inner-page">
             <Logo>   
               jifcast
             </Logo>

@@ -67,7 +67,7 @@ const AuthorWrapper = styled.div`
 
 `
 
-const Author = styled.span`
+const Author = styled.h2`
 	color: var(--color-label);
 	font-size: 1.12rem;
 	line-height: 13px;
@@ -221,16 +221,15 @@ const Percentage = styled.span`
 	margin-left: 1.6rem;
 
 `
-
-
-
-
 const Song = ( props ) => {
 
 		const { author , name, description, likes, listens, img, percentage} = props.song;
 
     return (
     	<Wrapper>
+    		<Helmet>
+					<meta name="description" content={ description }/>
+    		</Helmet>
     		<Thumbnail>
     			<BandImage src={require(`../assets/images/${img}.png`)}/>
     			<PlayIconImg src={PlayIcon}/>
@@ -276,10 +275,6 @@ const Song = ( props ) => {
 						</ProgressBarWrapper>
 					</SongFooter>
 				</InfoWrapper>
-				<Helmet>
-          <title>{ name }</title>
-          <meta name="description" content={ description }/>
-        </Helmet>
     	</Wrapper>
     );
 };

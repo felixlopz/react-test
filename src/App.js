@@ -1,24 +1,34 @@
 import React from 'react';
 
-
 // Router
-import { Router } from '@reach/router';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 // Pages
-import Home from './pages/Home.js'
-import Page from './pages/Page.js'
+import Home from './pages/Home'
+import Page from './pages/Page'
 
 // Layout
-import Header from './layout/Header.js'
+import Header from './layout/Header'
 
 function App() {
   return (
     <>
-      <Header/>    	
 			<Router>
-				<Home  path="/" />
-				<Page  path="/page" />
+				<Header/>
+				<Switch>
+	    		<Route path="/inner-page">
+	    			<Page/>
+	    		</Route>
+	    		<Route path="/">
+	    			<Home/>
+	    		</Route>
+    		</Switch>
 			</Router>
+    	
     </>
   );
 }

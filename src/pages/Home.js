@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Helmet } from 'react-helmet';
 
 // Grid
 import { Container } from '../utils/grid';
@@ -9,12 +8,9 @@ import { Container } from '../utils/grid';
 // components
 import PlayList from '../components/PlayList';
 
-
-
 const Wrapper = styled.section`
 	margin-bottom: 100px;
 `
-
 const Heading = styled.div`
 	border-bottom: 1px solid #F5F5F5;
 	padding: 1.5em 3em;
@@ -50,10 +46,6 @@ const Home = () => {
   		</Heading>
   		<Container>
   			<PlayList />
-  			<Helmet>
-          <title>Paylist Page</title>
-          <meta name="description" content="This is the description for the home page"/>
-        </Helmet>
   		</Container>
   	</Wrapper>  
   );
