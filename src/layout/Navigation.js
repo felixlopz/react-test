@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useMatch  } from '@reach/router';
-import { Helmet } from 'react-helmet';
-
-
 
 // Importing Icons
 import  RefreshIcon from '../assets/icons/refresh.png';
@@ -118,16 +115,6 @@ const Navigation = () => {
       	<MenuButton onClick={ () => { setIsOpen(!isOpen) }}>
       		Menu
       	</MenuButton>
-      	<Helmet>
-          <title>Navigation </title>
-          <meta name="description" content="This are the links for my navigation"/>
-          <link rel="facebook" href="https://google.com" />
-          <link rel="twitter" href="https://yahoo.com" />
-          <link rel="instagram" href="https://amazon.com" />
-          <link rel="google" href="https://facebook.com" />
-          <link rel="amazon" href="https://instagram.com" />
-          <link rel="yahoo" href="https://twitter.com" />
-        </Helmet>
       </NavWrapper>
   );
 };
