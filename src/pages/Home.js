@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 // Grid
 import { Container } from '../utils/grid';
@@ -53,9 +54,11 @@ const Home = () => {
   			</Container>
   		</Heading>
   		<Container>
-  			<PlayList>
-  				
-  			</PlayList>
+  			<PlayList />
+  			<Helmet>
+          <title>Paylist Page</title>
+          <meta name="description" content="This is the description for the home page"/>
+        </Helmet>
   		</Container>
   	</Wrapper>  
   );

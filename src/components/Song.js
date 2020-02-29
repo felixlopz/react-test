@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Helmet } from 'react-helmet';
 
 // Importing Icons
 import  HeartIcon from '../assets/icons/heart.png';
@@ -273,14 +274,12 @@ const Song = ( props ) => {
 							<ProgressBar per={ percentage }/>
 							<Percentage>{ percentage }%</Percentage>
 						</ProgressBarWrapper>
-							
-
-
-
 					</SongFooter>
-
-					
 				</InfoWrapper>
+				<Helmet>
+          <title>{ name }</title>
+          <meta name="description" content={ description }/>
+        </Helmet>
     	</Wrapper>
     );
 };

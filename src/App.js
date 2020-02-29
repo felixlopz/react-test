@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet'
 
 
 // Router
@@ -15,11 +14,6 @@ import Header from './layout/Header.js'
 function App() {
   return (
     <>
-			<Helmet>
-		    <title>This is the Landing page</title>
-		    <meta name="description" content="This is the content from my website" />
-		  </Helmet>
-
       <Header/>    	
 			<Router>
 				<Home  path="/" />
